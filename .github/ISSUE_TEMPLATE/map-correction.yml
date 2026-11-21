@@ -1,0 +1,29 @@
+name: Report a map correction
+description: Tell us about a missing pin, a misplaced marker, or incorrect map information.
+body:
+  - type: input
+    id: map
+    attributes:
+      label: MapNinja map URL
+      placeholder: Paste the link to the map you were using
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Pin name or nearby landmark
+      description: If the pin is missing, name the location or the closest landmark.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What needs correcting?
+      description: Describe what the map shows and what you found in the game. Include the floor or region if it helps.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: If you have one, attach an in-game screenshot showing the location.
